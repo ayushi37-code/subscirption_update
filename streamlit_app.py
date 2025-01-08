@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 import mysql.connector
-DB_CONNECTION_STR = "10.1.0.4#newuser1#newuser1@123#tech_ars_n"
+
 def get_connection(data):
     khost, kuser, kpasswd, kdb = data.split('#')
     conn = mysql.connector.connect(host=khost, user=kuser, passwd=kpasswd, db=kdb, charset="utf8")
